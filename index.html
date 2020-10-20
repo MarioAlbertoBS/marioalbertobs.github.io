@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mario Bojorquez</title>
+    <link rel="icon" href="img/robo_logo.svg" type="image/icon type">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- My Personal Data in Navigation Style -->
+    <section class="header">
+        <h2 class="header-text">Mario Bojórquez</h2>
+        <a class="header-icon" href="mailto:maralbo1@hotmail.com"><i class="fas fa-envelope tooltip"><span class="tooltip-text tooltip-bottom">Send me a Mail</span></i></a>
+        <a class="header-icon" href="https://github.com/marioalbertobs" target="_blank"><i class="fab fa-github tooltip"><span class="tooltip-text tooltip-bottom">Check my Github Profile</span></i></a>
+        <span class="header-text"></span>
+    </section>
+
+    <!-- Welcome Landing Page -->
+    <section class="landing">
+        <h1 class="welcome">Hello, and Welcome!</h1>
+        <section class="data">
+            <h1 class="title">Mario Bojórquez</h1>
+            <img class="icon icon-primary" src="img/robo_logo.svg"></img>
+            <h2 class="subtitle">Web Developer</h4>
+            <a href="mailto:maralbo1@hotmail.com"><i class="fas fa-envelope landing-icon tooltip"><span class="tooltip-text tooltip-top">Send me a Mail</span></i></a>
+            <a href="https://github.com/marioalbertobs" target="_blank"><i class="fab fa-github landing-icon tooltip"><span class="tooltip-text tooltip-top">Check my Github Profile</span></i></a>
+        </section>
+    </section>
+
+    <!-- Projects List -->
+    <section class="projects">
+        <h1 class="projects-title">My projects and Demos</h1><br/>
+        <!-- Single Project Statement -->
+        <div class="project">
+            <div class="project-image">
+                <img src="img/laratweet_screen.png" alt="Project Landing">
+            </div>
+            <div class="project-info">
+                <h3 class="project-info-title">Laratweet</h3>
+                <p class="project-info-description">Basic Twitter like application, using Laravel as Backend and the integrated version of ReactJS.</p>
+                <div class="project-info-badges">
+                    <span class="badge">PHP</span>
+                    <span class="badge">Laravel</span>
+                    <span class="badge">ReactJS</span>
+                    <span class="badge">SQL</span>
+                </div>
+            </div>
+            <div class="project-links">
+                <a href="http://laratweet-mario.herokuapp.com/" target="_blank"><i class="fas fa-globe tooltip"><span class="tooltip-text tooltip-top">Go to Live Demo</span></i></a>
+                <a href="https://github.com/MarioAlbertoBS/Laratweet/tree/simplified" target="_blank"><i class="fab fa-github tooltip"><span class="tooltip-text tooltip-top">Go to Github Repo</span></i></a>
+            </div>
+        </div>
+        <!-- End of Single Project Statement -->
+
+    </section>
+
+    <!-- My Programming Languajes -->
+    <section class="languajes">
+        <h1 class="languajes-title">Used Technologies</h1>
+        <div class="languaje-list">
+            <!-- Single Languaje Statement -->
+            <div class="languaje">
+                <div class="languaje-image">
+                    <img src="img/icons/linux.svg">
+                </div>
+                <span class="languaje-name">Linux</span>
+            </div>
+            <!-- End of Single Languaje Statement -->
+            <!-- Single Languaje Statement -->
+            <div class="languaje">
+                <div class="languaje-image">
+                    <img src="img/icons/html5.svg">
+                </div>
+                <span class="languaje-name">HTML</span>
+            </div>
+            <!-- End of Single Languaje Statement -->
+            <!-- Single Languaje Statement -->
+            <div class="languaje">
+                <div class="languaje-image">
+                    <img src="img/icons/css3.svg">
+                </div>
+                <span class="languaje-name">CSS</span>
+            </div>
+            <!-- End of Single Languaje Statement -->
+            <div class="languaje">
+                <div class="languaje-image">
+                    <img src="img/icons/javascript.svg">
+                </div>
+                <span class="languaje-name">Javascript</span>
+            </div>
+            <!-- End of Single Languaje Statement -->
+            <!-- Single Languaje Statement -->
+            <div class="languaje">
+                <div class="languaje-image">
+                    <img src="img/icons/nodejs.svg">
+                </div>
+                <span class="languaje-name">NodeJS</span>
+            </div>
+            <!-- End of Single Languaje Statement -->
+            <!-- Single Languaje Statement -->
+            <div class="languaje">
+                <div class="languaje-image">
+                    <img src="img/icons/reactjs.svg">
+                </div>
+                <span class="languaje-name">ReactJS</span>
+            </div>
+            <!-- End of Single Languaje Statement -->
+            <!-- Single Languaje Statement -->
+            <div class="languaje">
+                <div class="languaje-image">
+                    <img src="img/icons/mongodb.svg">
+                </div>
+                <span class="languaje-name">MongoDB</span>
+            </div>
+            <!-- End of Single Languaje Statement -->
+            <!-- Single Languaje Statement -->
+            <div class="languaje">
+                <div class="languaje-image">
+                    <img src="img/icons/php.svg">
+                </div>
+                <span class="languaje-name">PHP</span>
+            </div>
+            <!-- End of Single Languaje Statement -->
+            <!-- Single Languaje Statement -->
+            <div class="languaje">
+                <div class="languaje-image">
+                    <img src="img/icons/laravel.svg">
+                </div>
+                <span class="languaje-name">Laravel</span>
+            </div>
+            <!-- End of Single Languaje Statement -->
+            <!-- Single Languaje Statement -->
+            <div class="languaje">
+                <div class="languaje-image">
+                    <img src="img/icons/mysql.svg">
+                </div>
+                <span class="languaje-name">MySQL</span>
+            </div>
+            <!-- End of Single Languaje Statement -->
+            <!-- Single Languaje Statement -->
+            <div class="languaje">
+                <div class="languaje-image">
+                    <img src="img/icons/postgresql.svg">
+                </div>
+                <span class="languaje-name">PosrgreSQL</span>
+            </div>
+            <!-- End of Single Languaje Statement -->
+        </div>
+    </section>
+
+    <script>
+        const observer = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    console.log("On Screen");
+                    const banner = document.querySelector('.header');
+                    banner.style.opacity = "0";
+                } else {
+                    console.log("Off Screen");
+                    const banner = document.querySelector('.header');
+                    banner.style.opacity = "1";
+                }
+            });
+        });
+
+        let element = document.querySelector('.data');
+        observer.observe(element);
+    </script>
+    <script src="https://kit.fontawesome.com/375b0e8e2a.js" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+@use 'vars'
+
+.header
+    width: 100%
+    background-color: vars.$background
+    display: flexbox
+    position: fixed
+    top: 0
+    z-index: 10
+    transition: opacity 0.5s
+    align-items: center
+    text-align: center
+    opacity: 0
+
+    &-text
+        font-size: 2rem
+        margin-right: 1rem
+        
+    &-icon
+        font-size: 2rem
+        margin: 0 1rem
+
+@media screen and ( min-width: 600px)
+    .header
+        display: flex
+        justify-content: right
+        text-align: left
+
+        &-text
+            font-size: 4rem
+            margin-right: 5rem
+
+        &-icon
+            font-size: 3rem
+            margin: 0 1rem

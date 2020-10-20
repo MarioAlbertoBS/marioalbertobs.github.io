@@ -1,0 +1,46 @@
+@use 'animations'
+@use 'vars'
+
+.landing
+    height: 100vh
+    text-align: center
+    align-items: center
+    justify-content: center
+    display: flex
+
+    .welcome
+        display: flex
+        font-size: 1rem
+        animation: fade 2s linear forwards
+        font-size: 3rem
+
+    .data
+        animation: fade 2s 2s linear reverse forwards
+        visibility: hidden
+        position: absolute
+
+    .subtitle
+        color: vars.$secondary-color
+
+    .title
+        font-size: 3rem
+    
+    .icon
+        width: 4rem
+
+    .subtitle, &-icon
+        font-size: 2rem
+    
+@media screen and ( min-width: 600px)
+    .landing
+        .welcome
+            font-size: 7rem
+        
+        .title
+            font-size: 5rem
+
+        .icon
+            width: 10rem
+
+        .subtitle, &-icon
+            font-size: 3rem
